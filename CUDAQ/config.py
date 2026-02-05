@@ -9,7 +9,7 @@ import os
 # 路徑設定
 # ==========================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
+DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'data')  # 指向上層的 data 資料夾
 RESULT_DIR = os.path.join(BASE_DIR, 'results')
 
 # 數據文件 (本地路徑)

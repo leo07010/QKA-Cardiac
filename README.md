@@ -60,6 +60,8 @@ pip install -r requirements.txt
 3.  **核矩陣計算**: 計算訓練數據與測試數據的核矩陣。
 4.  **模型訓練與評估**: 使用 LOOCV (Leave-One-Out Cross-Validation) 評估 R2 分數與 RMSE。
 
+
+
 ## 📊 預期結果
 
 執行筆記本後，您將看到：
