@@ -25,12 +25,14 @@ import time
 import argparse
 import json
 from datetime import datetime
+from tqdm import tqdm
 
 # 導入配置
 from config import (
     MAIN_DATA_FILE, GENE_FILES, RESULT_DIR,
     RESULT_DATA_DIR, RESULT_FIG_DIR, RESULT_KERNEL_DIR,
-    DEFAULT_SHOTS, DEFAULT_MAX_ITER, SVR_C, SVR_EPSILON
+    DEFAULT_SHOTS, DEFAULT_MAX_ITER, SVR_C, SVR_EPSILON,
+    LAYER_CONFIGS, DEFAULT_N_LAYERS, DEFAULT_TOL
 )
 
 # ==========================================
@@ -160,6 +162,39 @@ def kernel_L4(x1: list[float], x2: list[float], params: list[float]):
 
 KERNEL_MAP = {1: kernel_L1, 2: kernel_L2, 4: kernel_L4}
 
+
+@cudaq.kernel
+def angle_map_generic(q: cudaq.qview, x: list[float], params: list[float], n_layers: int):
+    n = x.size()
+    for layer in range(n_layers):
+        base = layer * 2 * n
+        # only apply H gates before first layer (keeps prior behaviour)
+        if layer == 0:
+            for i in range(n):
+                h(q[i])
+                rz(x[i] * params[base + i], q[i])
+        else:
+            for i in range(n):
+                rz(x[i] * params[base + i], q[i])
+
+        for i in range(n - 1):
+            cx(q[i], q[i+1])
+        if n > 1:
+            cx(q[n-1], q[0])
+
+        for i in range(n):
+#            rx(x[i] * params[base + n + i], q[i])
+            rx(params[base + n + i], q[i])
+
+
+
+@cudaq.kernel
+def kernel_generic(x1: list[float], x2: list[float], params: list[float], n_layers: int):
+    q = cudaq.qvector(len(x1))
+    angle_map_generic(q, x1, params, n_layers)
+    cudaq.adjoint(angle_map_generic, q, x2, params, n_layers)
+    mz(q)
+
 def get_n_params(n_qubits: int, n_layers: int) -> int:
     """參數數量 = n_qubits × n_layers × 2"""
     return n_qubits * n_layers * 2
@@ -247,33 +282,47 @@ def load_data(gene_set: str = 'top30', pca_dim: int = None):
 # 量子核計算
 # ==========================================
 def compute_kernel(X: np.ndarray, params: np.ndarray,
-                   n_layers: int, shots: int = 2000) -> np.ndarray:
+                   n_layers: int, shots: int = 2000,
+                   show_pairs: bool = False) -> np.ndarray:
     """計算量子核矩陣"""
     n_samples = len(X)
     n_qubits = X.shape[1]
     K = np.zeros((n_samples, n_samples))
     zero_str = '0' * n_qubits
 
-    kernel_func = KERNEL_MAP[n_layers]
+    kernel_func = KERNEL_MAP.get(n_layers, kernel_generic)
     total = n_samples * (n_samples + 1) // 2
-    count = 0
 
-    for i in range(n_samples):
-        for j in range(i, n_samples):
-            result = cudaq.sample(
-                kernel_func,
-                X[i].tolist(), X[j].tolist(), params.tolist(),
-                shots_count=shots
-            )
-            prob = dict(result.items()).get(zero_str, 0) / shots
-            K[i, j] = prob
-            K[j, i] = prob
+    # Iterate pairs; only show a per-pair progress bar when explicitly requested
+    if show_pairs:
+        pbar = tqdm(total=total, desc='Kernel pairs', unit='pair')
+    else:
+        pbar = None
 
-            count += 1
-            if count % 50 == 0:
-                print(f"\r   Kernel: {count}/{total} ({100*count/total:.0f}%)", end="")
+    try:
+        for i in range(n_samples):
+            for j in range(i, n_samples):
+                if kernel_func is kernel_generic:
+                    result = cudaq.sample(
+                        kernel_func,
+                        X[i].tolist(), X[j].tolist(), params.tolist(), n_layers,
+                        shots_count=shots
+                    )
+                else:
+                    result = cudaq.sample(
+                        kernel_func,
+                        X[i].tolist(), X[j].tolist(), params.tolist(),
+                        shots_count=shots
+                    )
 
-    print(f"\r   Kernel: {total}/{total} (100%) Done!     ")
+                prob = dict(result.items()).get(zero_str, 0) / shots
+                K[i, j] = prob
+                K[j, i] = prob
+                if pbar is not None:
+                    pbar.update(1)
+    finally:
+        if pbar is not None:
+            pbar.close()
     return K
 
 # ==========================================
@@ -295,7 +344,8 @@ def optimize_qka(X: np.ndarray, y: np.ndarray, n_layers: int,
 
     def loss_kta(params):
         params = np.abs(params)
-        K = compute_kernel(X, params, n_layers, shots)
+        # compute kernel without flooding terminal with pair-level progress
+        K = compute_kernel(X, params, n_layers, shots, show_pairs=False)
 
         Y_mat = np.outer(y, y)
         inner = np.sum(K * Y_mat)
@@ -308,14 +358,33 @@ def optimize_qka(X: np.ndarray, y: np.ndarray, n_layers: int,
         print(f"\r   Iter {len(loss_history):3d}: KTA = {-loss:.4f}", end="")
         return loss
 
-    np.random.seed(42)
-    init_params = np.random.uniform(0.1, 2*np.pi, n_params)
+    # 初始化參數：全部設為 0.5（固定初始值，避免隨機初始化）
+    init_params = np.full(n_params, 0.5)
+
 
     print(f"\n   Starting optimization...")
-    start = time.time()
 
-    result = minimize(loss_kta, init_params, method='COBYLA',
-                     options={'maxiter': max_iter, 'rhobeg': 0.5})
+    # show a single progress bar for optimization iterations (e.g., 50 iters)
+    opt_pbar = tqdm(total=max_iter, desc='Optimization', unit='iter')
+    try:
+        start = time.time()
+        # make pbar available in closure to update based on loss evaluations
+        def loss_kta_with_progress(params):
+            val = loss_kta(params)
+            # update progress to reflect number of recorded losses (cap at max_iter)
+            try:
+                opt_pbar.n = min(len(loss_history), max_iter)
+                opt_pbar.refresh()
+            except Exception:
+                pass
+            return val
+
+        result = minimize(
+            loss_kta_with_progress, init_params, method='COBYLA',
+            options={'maxiter': max_iter, 'rhobeg': 0.5, 'tol': DEFAULT_TOL}
+        )
+    finally:
+        opt_pbar.close()
 
     train_time = time.time() - start
     opt_params = np.abs(result.x)
@@ -333,7 +402,7 @@ def evaluate_loocv(K: np.ndarray, y: np.ndarray, scaler_y):
     loo = LeaveOneOut()
     y_true_list, y_pred_list = [], []
 
-    for train_idx, test_idx in loo.split(K):
+    for train_idx, test_idx in tqdm(loo.split(K), total=K.shape[0], desc='LOOCV (QKA)'):
         svr = SVR(kernel='precomputed', C=SVR_C, epsilon=SVR_EPSILON)
         svr.fit(K[np.ix_(train_idx, train_idx)], y[train_idx])
         pred = svr.predict(K[np.ix_(test_idx, train_idx)])[0]
@@ -360,7 +429,7 @@ def evaluate_rbf(X: np.ndarray, y: np.ndarray, scaler_y):
     loo = LeaveOneOut()
     y_true_list, y_pred_list = [], []
 
-    for train_idx, test_idx in loo.split(X):
+    for train_idx, test_idx in tqdm(loo.split(X), total=X.shape[0], desc='LOOCV (RBF)'):
         svr = SVR(kernel='rbf', C=SVR_C, epsilon=SVR_EPSILON, gamma='scale')
         svr.fit(X[train_idx], y[train_idx])
         pred = svr.predict(X[test_idx])[0]
@@ -473,9 +542,11 @@ def run_experiment(pca_dim: int = 10, n_layers: int = 2,
     X, y, scaler_y, feat_names, metadata = load_data(gene_set, pca_dim)
 
     # 2. QKA 優化
+    opt_start = time.time()
     opt_params, loss_history, train_time = optimize_qka(
         X, y, n_layers, max_iter, shots
     )
+    opt_end = time.time()
 
     # 3. 計算最終核矩陣
     print(f"\n   Computing final kernel...")
@@ -514,6 +585,13 @@ def run_experiment(pca_dim: int = 10, n_layers: int = 2,
         'rbf': {'r2': float(results_rbf['r2']), 'mae': float(results_rbf['mae'])}
     }
 
+    # 計算並加入總訓練/實驗時間
+    total_time = time.time() - opt_start
+    summary['timing'] = {
+        'optimization_time': float(train_time),
+        'opt_overhead': float(opt_end - opt_start - train_time),
+        'total_after_opt_seconds': float(total_time)
+    }
     with open(os.path.join(RESULT_DATA_DIR, f'{exp_name}.json'), 'w') as f:
         json.dump(summary, f, indent=2)
 
