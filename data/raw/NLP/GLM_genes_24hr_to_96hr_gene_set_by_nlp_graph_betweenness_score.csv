@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000128591,FLNC,1.1430915294029709,filamin C [Source:HGNC Symbol;Acc:HGNC:3756],protein_coding
+1,ensg00000075624,ACTB,0.9000237468132448,actin beta [Source:HGNC Symbol;Acc:HGNC:132],protein_coding
+2,ensg00000115414,FN1,0.6713466202393679,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding
+3,ensg00000105974,CAV1,-0.5450397028767255,caveolin 1 [Source:HGNC Symbol;Acc:HGNC:1527],protein_coding
+4,ensg00000177606,JUN,-1.6733212973272082,"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]",protein_coding

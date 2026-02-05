@@ -1,0 +1,18 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000071127,WDR1,35.20481936237786,WD repeat domain 1 [Source:HGNC Symbol;Acc:HGNC:12754],protein_coding
+1,ensg00000128591,FLNC,24.825308939137628,filamin C [Source:HGNC Symbol;Acc:HGNC:3756],protein_coding
+2,ensg00000105974,CAV1,20.388587831179414,caveolin 1 [Source:HGNC Symbol;Acc:HGNC:1527],protein_coding
+3,ensg00000115414,FN1,8.47028049360844,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding
+4,ensg00000055208,TAB2,8.015355042501284,TGF-beta activated kinase 1 (MAP3K7) binding protein 2 [Source:HGNC Symbol;Acc:HGNC:17075],protein_coding
+5,ensg00000106631,MYL7,6.798472798650928,myosin light chain 7 [Source:HGNC Symbol;Acc:HGNC:21719],protein_coding
+6,ensg00000112715,VEGFA,6.123370348003875,vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680],protein_coding
+7,ensg00000074800,ENO1,-1.1085808617711321,enolase 1 [Source:HGNC Symbol;Acc:HGNC:3350],protein_coding
+8,ensg00000154553,PDLIM3,-3.9593974729669466,PDZ and LIM domain 3 [Source:HGNC Symbol;Acc:HGNC:20767],protein_coding
+9,ensg00000058668,ATP2B4,-4.781710370447751,ATPase plasma membrane Ca2+ transporting 4 [Source:HGNC Symbol;Acc:HGNC:817],protein_coding
+10,ensg00000164305,CASP3,-10.08970890209782,caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504],protein_coding
+11,ensg00000122786,CALD1,-12.600744465045166,caldesmon 1 [Source:HGNC Symbol;Acc:HGNC:1441],protein_coding
+12,ensg00000143549,TPM3,-15.68757118857354,tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012],protein_coding
+13,ensg00000163681,SLMAP,-19.97565694870303,sarcolemma associated protein [Source:HGNC Symbol;Acc:HGNC:16643],protein_coding
+14,ensg00000143799,PARP1,-22.00479091474451,poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270],protein_coding
+15,ensg00000134250,NOTCH2,-23.03674417226952,notch receptor 2 [Source:HGNC Symbol;Acc:HGNC:7882],protein_coding
+16,ensg00000164442,CITED2,-29.461127034277844,Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 2 [Source:HGNC Symbol;Acc:HGNC:1987],protein_coding

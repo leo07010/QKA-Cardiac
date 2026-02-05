@@ -1,0 +1,18 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000164305,CASP3,6.543664937688882,caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504],protein_coding
+1,ensg00000058668,ATP2B4,5.8961446582365795,ATPase plasma membrane Ca2+ transporting 4 [Source:HGNC Symbol;Acc:HGNC:817],protein_coding
+2,ensg00000134250,NOTCH2,5.732555556084533,notch receptor 2 [Source:HGNC Symbol;Acc:HGNC:7882],protein_coding
+3,ensg00000151729,SLC25A4,4.221235123919624,solute carrier family 25 member 4 [Source:HGNC Symbol;Acc:HGNC:10990],protein_coding
+4,ensg00000075624,ACTB,3.015363340903454,actin beta [Source:HGNC Symbol;Acc:HGNC:132],protein_coding
+5,ensg00000177606,JUN,2.0569632193564376,"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]",protein_coding
+6,ensg00000154553,PDLIM3,0.5875571299471702,PDZ and LIM domain 3 [Source:HGNC Symbol;Acc:HGNC:20767],protein_coding
+7,ensg00000143549,TPM3,0.5808801647547386,tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012],protein_coding
+8,ensg00000106631,MYL7,0.14265769056920347,myosin light chain 7 [Source:HGNC Symbol;Acc:HGNC:21719],protein_coding
+9,ensg00000143799,PARP1,0.0022559121274207117,poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270],protein_coding
+10,ensg00000188157,AGRN,-0.0995384290197246,agrin [Source:HGNC Symbol;Acc:HGNC:329],protein_coding
+11,ensg00000115414,FN1,-0.5314327425153276,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding
+12,ensg00000130508,PXDN,-2.2772707178761467,peroxidasin [Source:HGNC Symbol;Acc:HGNC:14966],protein_coding
+13,ensg00000105974,CAV1,-3.5506484068972832,caveolin 1 [Source:HGNC Symbol;Acc:HGNC:1527],protein_coding
+14,ensg00000163681,SLMAP,-4.057800862859694,sarcolemma associated protein [Source:HGNC Symbol;Acc:HGNC:16643],protein_coding
+15,ensg00000128591,FLNC,-4.891877090590791,filamin C [Source:HGNC Symbol;Acc:HGNC:3756],protein_coding
+16,ensg00000170876,TMEM43,-10.12919537433577,transmembrane protein 43 [Source:HGNC Symbol;Acc:HGNC:28472],protein_coding

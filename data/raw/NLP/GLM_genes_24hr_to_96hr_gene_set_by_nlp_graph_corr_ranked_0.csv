@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000122786,CALD1,10.858688750226131,caldesmon 1 [Source:HGNC Symbol;Acc:HGNC:1441],protein_coding
+1,ensg00000154553,PDLIM3,0.08081558232603481,PDZ and LIM domain 3 [Source:HGNC Symbol;Acc:HGNC:20767],protein_coding
+2,ensg00000112715,VEGFA,-0.9551714857534269,vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680],protein_coding
+3,ensg00000115414,FN1,-2.4429328429536827,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding
+4,ensg00000117298,ECE1,-5.463285050109186,endothelin converting enzyme 1 [Source:HGNC Symbol;Acc:HGNC:3146],protein_coding

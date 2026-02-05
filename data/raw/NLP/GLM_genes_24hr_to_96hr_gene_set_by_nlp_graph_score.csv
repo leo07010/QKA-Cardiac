@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000134250,NOTCH2,0.7738539570115167,notch receptor 2 [Source:HGNC Symbol;Acc:HGNC:7882],protein_coding
+1,ensg00000163681,SLMAP,0.7060549923439043,sarcolemma associated protein [Source:HGNC Symbol;Acc:HGNC:16643],protein_coding
+2,ensg00000106631,MYL7,0.28785842031533027,myosin light chain 7 [Source:HGNC Symbol;Acc:HGNC:21719],protein_coding
+3,ensg00000058668,ATP2B4,0.21683371607570878,ATPase plasma membrane Ca2+ transporting 4 [Source:HGNC Symbol;Acc:HGNC:817],protein_coding
+4,ensg00000105974,CAV1,-1.310746792582906,caveolin 1 [Source:HGNC Symbol;Acc:HGNC:1527],protein_coding

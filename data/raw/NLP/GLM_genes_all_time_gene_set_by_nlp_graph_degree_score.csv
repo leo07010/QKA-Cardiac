@@ -1,0 +1,18 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000164305,CASP3,13.74336934440776,caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504],protein_coding
+1,ensg00000130508,PXDN,6.419187252587135,peroxidasin [Source:HGNC Symbol;Acc:HGNC:14966],protein_coding
+2,ensg00000128591,FLNC,5.890822953213743,filamin C [Source:HGNC Symbol;Acc:HGNC:3756],protein_coding
+3,ensg00000188157,AGRN,4.83953802174507,agrin [Source:HGNC Symbol;Acc:HGNC:329],protein_coding
+4,ensg00000138448,ITGAV,4.474087298124252,integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150],protein_coding
+5,ensg00000092820,EZR,3.3137387995580867,ezrin [Source:HGNC Symbol;Acc:HGNC:12691],protein_coding
+6,ensg00000106366,SERPINE1,2.4459110020513815,serpin family E member 1 [Source:HGNC Symbol;Acc:HGNC:8583],protein_coding
+7,ensg00000105974,CAV1,1.116850348654135,caveolin 1 [Source:HGNC Symbol;Acc:HGNC:1527],protein_coding
+8,ensg00000196569,LAMA2,-0.6808932296765866,laminin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6482],protein_coding
+9,ensg00000117394,SLC2A1,-0.9344700167536718,solute carrier family 2 member 1 [Source:HGNC Symbol;Acc:HGNC:11005],protein_coding
+10,ensg00000074800,ENO1,-3.477487442906227,enolase 1 [Source:HGNC Symbol;Acc:HGNC:3350],protein_coding
+11,ensg00000075624,ACTB,-3.9074778283006215,actin beta [Source:HGNC Symbol;Acc:HGNC:132],protein_coding
+12,ensg00000115414,FN1,-4.1340136407900605,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding
+13,ensg00000143384,MCL1,-5.765661243034657,"MCL1 apoptosis regulator, BCL2 family member [Source:HGNC Symbol;Acc:HGNC:6943]",protein_coding
+14,ensg00000143799,PARP1,-7.449320445187611,poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270],protein_coding
+15,ensg00000138760,SCARB2,-10.743879429660444,scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665],protein_coding
+16,ensg00000177606,JUN,-11.238205539001049,"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]",protein_coding

@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000075624,ACTB,6.8750178984903085,actin beta [Source:HGNC Symbol;Acc:HGNC:132],protein_coding
+1,ensg00000128591,FLNC,4.3015071837504655,filamin C [Source:HGNC Symbol;Acc:HGNC:3756],protein_coding
+2,ensg00000106631,MYL7,3.472625580222381,myosin light chain 7 [Source:HGNC Symbol;Acc:HGNC:21719],protein_coding
+3,ensg00000154553,PDLIM3,-0.8589065378839346,PDZ and LIM domain 3 [Source:HGNC Symbol;Acc:HGNC:20767],protein_coding
+4,ensg00000143549,TPM3,-2.242953422847198,tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012],protein_coding

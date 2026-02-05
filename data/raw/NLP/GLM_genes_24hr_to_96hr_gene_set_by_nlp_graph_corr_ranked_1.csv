@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000058668,ATP2B4,22.295838700028284,ATPase plasma membrane Ca2+ transporting 4 [Source:HGNC Symbol;Acc:HGNC:817],protein_coding
+1,ensg00000122786,CALD1,19.23715494879848,caldesmon 1 [Source:HGNC Symbol;Acc:HGNC:1441],protein_coding
+2,ensg00000106631,MYL7,-5.296696206792386,myosin light chain 7 [Source:HGNC Symbol;Acc:HGNC:21719],protein_coding
+3,ensg00000112715,VEGFA,-9.611838515879649,vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680],protein_coding
+4,ensg00000163681,SLMAP,-22.73635713399082,sarcolemma associated protein [Source:HGNC Symbol;Acc:HGNC:16643],protein_coding

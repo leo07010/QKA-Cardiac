@@ -1,0 +1,6 @@
+,ensembl_gene_id,gene_symbol,glm_coef,description,biotype
+0,ensg00000164305,CASP3,44.39639178441498,caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504],protein_coding
+1,ensg00000130508,PXDN,38.54306997483311,peroxidasin [Source:HGNC Symbol;Acc:HGNC:14966],protein_coding
+2,ensg00000177606,JUN,-15.748412683562911,"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]",protein_coding
+3,ensg00000075624,ACTB,-26.46026988964656,actin beta [Source:HGNC Symbol;Acc:HGNC:132],protein_coding
+4,ensg00000115414,FN1,-29.4031064032155,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],protein_coding

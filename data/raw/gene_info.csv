@@ -1,0 +1,232 @@
+Name,ensembl_id,gene_product,type_of_gene
+MTATP6P1,ENSG00000248527,MT-ATP6 pseudogene 1,pseudo
+NPPA,ENSG00000175206,natriuretic peptide A,protein-coding
+NPPB,ENSG00000120937,natriuretic peptide B,protein-coding
+HSPB7,ENSG00000173641,heat shock protein family B (small) member 7,protein-coding
+RPL11,ENSG00000142676,ribosomal protein L11,protein-coding
+FABP3,ENSG00000121769,fatty acid binding protein 3,protein-coding
+YBX1,ENSG00000065978,Y-box binding protein 1,protein-coding
+RPS8,ENSG00000142937,ribosomal protein S8,protein-coding
+PRDX1,ENSG00000117450,peroxiredoxin 1,protein-coding
+RPL5,ENSG00000122406,ribosomal protein L5,protein-coding
+PSMB4,ENSG00000159377,proteasome 20S subunit beta 4,protein-coding
+S100A11,ENSG00000163191,S100 calcium binding protein A11,protein-coding
+S100A6,ENSG00000197956,S100 calcium binding protein A6,protein-coding
+RPS27,ENSG00000177954,ribosomal protein S27,protein-coding
+TNNT2,ENSG00000118194,"troponin T2, cardiac type",protein-coding
+TNNI1,ENSG00000159173,"troponin I1, slow skeletal type",protein-coding
+CYB5R1,ENSG00000159348,cytochrome b5 reductase 1,protein-coding
+H3-3A,ENSG00000163041,H3.3 histone A,protein-coding
+ACTA1,ENSG00000143632,"actin alpha 1, skeletal muscle",protein-coding
+TMSB10,ENSG00000034510,thymosin beta 10,protein-coding
+RPL31,ENSG00000071082,ribosomal protein L31,protein-coding
+FHL2,ENSG00000115641,four and a half LIM domains 2,protein-coding
+H3P6,ENSG00000235655,H3 histone pseudogene 6,n.d.
+COL3A1,ENSG00000168542,collagen type III alpha 1 chain,protein-coding
+RPL37A,ENSG00000197756,ribosomal protein L37a,protein-coding
+RPL32,ENSG00000144713,ribosomal protein L32,protein-coding
+RPL15,ENSG00000174748,ribosomal protein L15,protein-coding
+RPL14,ENSG00000188846,ribosomal protein L14,protein-coding
+MYL3,ENSG00000160808,myosin light chain 3,protein-coding
+GPX1,ENSG00000233276,glutathione peroxidase 1,protein-coding
+RPL29,ENSG00000162244,ribosomal protein L29,protein-coding
+TNNC1,ENSG00000114854,"troponin C1, slow skeletal and cardiac type",protein-coding
+RPL24,ENSG00000114391,ribosomal protein L24,protein-coding
+FSTL1,ENSG00000163430,follistatin like 1,protein-coding
+RPL23AP42,ENSG00000234851,ribosomal protein L23a pseudogene 42,pseudo
+NDUFB5,ENSG00000136521,NADH:ubiquinone oxidoreductase subunit B5,protein-coding
+RPL35A,ENSG00000182899,ribosomal protein L35a,protein-coding
+ATP5ME,ENSG00000169020,ATP synthase membrane subunit e,protein-coding
+LRPAP1,ENSG00000163956,LDL receptor related protein associated protein 1,protein-coding
+UCHL1,ENSG00000154277,ubiquitin C-terminal hydrolase L1,protein-coding
+IGFBP7,ENSG00000163453,insulin like growth factor binding protein 7,protein-coding
+RPL34,ENSG00000109475,ribosomal protein L34,protein-coding
+RPS3A,ENSG00000145425,ribosomal protein S3A,protein-coding
+BTF3,ENSG00000145741,basic transcription factor 3,protein-coding
+RPS23,ENSG00000186468,ribosomal protein S23,protein-coding
+COX7C,ENSG00000127184,cytochrome c oxidase subunit 7C,protein-coding
+PSMC1P5,ENSG00000250273,"proteasome 26S subunit, ATPase 1 pseudogene 5",pseudo
+NREP,ENSG00000134986,neuronal regeneration related protein,protein-coding
+UQCRQ,ENSG00000164405,ubiquinol-cytochrome c reductase complex III subunit VII,protein-coding
+SKP1,ENSG00000113558,S-phase kinase associated protein 1,protein-coding
+RPS14,ENSG00000164587,ribosomal protein S14,protein-coding
+SPARC,ENSG00000113140,secreted protein acidic and cysteine rich,protein-coding
+NPM1,ENSG00000181163,nucleophosmin 1,protein-coding
+SQSTM1,ENSG00000161011,sequestosome 1,protein-coding
+RACK1,ENSG00000204628,receptor for activated C kinase 1,protein-coding
+H2BC12,ENSG00000197903,H2B clustered histone 12,protein-coding
+HLA-B,ENSG00000234745,"major histocompatibility complex, class I, B",protein-coding
+HSPA1A,ENSG00000204389,heat shock protein family A (Hsp70) member 1A,protein-coding
+HSPA1B,ENSG00000204388,heat shock protein family A (Hsp70) member 1B,protein-coding
+RPS18,ENSG00000231500,ribosomal protein S18,protein-coding
+RPS10,ENSG00000124614,ribosomal protein S10,protein-coding
+RPL10A,ENSG00000198755,ribosomal protein L10a,protein-coding
+CDKN1A,ENSG00000124762,cyclin dependent kinase inhibitor 1A,protein-coding
+HSP90AB1,ENSG00000096384,heat shock protein 90 alpha family class B member 1,protein-coding
+EEF1A1,ENSG00000156508,eukaryotic translation elongation factor 1 alpha 1,protein-coding
+PLN,ENSG00000198523,phospholamban,protein-coding
+RPS12,ENSG00000112306,ribosomal protein S12,protein-coding
+ACTB,ENSG00000075624,actin beta,protein-coding
+MYL7,ENSG00000106631,myosin light chain 7,protein-coding
+PPIA,ENSG00000196262,peptidylprolyl isomerase A,protein-coding
+HSPB1,ENSG00000106211,heat shock protein family B (small) member 1,protein-coding
+COL1A2,ENSG00000164692,collagen type I alpha 2 chain,protein-coding
+ATP5MF,ENSG00000241468,ATP synthase membrane subunit f,protein-coding
+SERPINE1,ENSG00000106366,serpin family E member 1,protein-coding
+FLNC,ENSG00000128591,filamin C,protein-coding
+AKR1B1,ENSG00000085662,aldo-keto reductase family 1 member B,protein-coding
+CTSB,ENSG00000164733,cathepsin B,protein-coding
+CLU,ENSG00000120885,clusterin,protein-coding
+RPS20,ENSG00000008988,ribosomal protein S20,protein-coding
+RPL7,ENSG00000147604,ribosomal protein L7,protein-coding
+RPL30,ENSG00000156482,ribosomal protein L30,protein-coding
+PABPC1,ENSG00000070756,poly(A) binding protein cytoplasmic 1,protein-coding
+RPL8,ENSG00000161016,ribosomal protein L8,protein-coding
+RPS6,ENSG00000137154,ribosomal protein S6,protein-coding
+PSMB7,ENSG00000136930,proteasome 20S subunit beta 7,protein-coding
+RPL35,ENSG00000136942,ribosomal protein L35,protein-coding
+HSPA5,ENSG00000044574,heat shock protein family A (Hsp70) member 5,protein-coding
+RPL12,ENSG00000197958,ribosomal protein L12,protein-coding
+RPL7A,ENSG00000148303,ribosomal protein L7a,protein-coding
+TUBB4B,ENSG00000188229,tubulin beta 4B class IVb,protein-coding
+VIM,ENSG00000026025,vimentin,protein-coding
+CXCL12,ENSG00000107562,C-X-C motif chemokine ligand 12,protein-coding
+PSAP,ENSG00000197746,prosaposin,protein-coding
+RPS24,ENSG00000138326,ribosomal protein S24,protein-coding
+ACTA2,ENSG00000107796,"actin alpha 2, smooth muscle",protein-coding
+ANKRD1,ENSG00000148677,ankyrin repeat domain 1,protein-coding
+ATP5MK,ENSG00000173915,ATP synthase membrane subunit k,protein-coding
+RPL21P16,ENSG00000220842,ribosomal protein L21 pseudogene 16,pseudo
+IFITM3,ENSG00000142089,interferon induced transmembrane protein 3,protein-coding
+H19,ENSG00000130600,H19 imprinted maternally expressed transcript,ncRNA
+IGF2,ENSG00000167244,insulin like growth factor 2,protein-coding
+RPL27A,ENSG00000166441,ribosomal protein L27a,protein-coding
+EIF4G2,ENSG00000110321,eukaryotic translation initiation factor 4 gamma 2,protein-coding
+RPL36AP37,ENSG00000244398,ribosomal protein L36a pseudogene 37,pseudo
+RPS13,ENSG00000110700,ribosomal protein S13,protein-coding
+CSRP3,ENSG00000129170,cysteine and glycine rich protein 3,protein-coding
+CD59,ENSG00000085063,CD59 molecule (CD59 blood group),protein-coding
+FTH1,ENSG00000167996,ferritin heavy chain 1,protein-coding
+EEF1G,ENSG00000254772,eukaryotic translation elongation factor 1 gamma,protein-coding
+COX8A,ENSG00000176340,cytochrome c oxidase subunit 8A,protein-coding
+CFL1,ENSG00000172757,cofilin 1,protein-coding
+GSTP1,ENSG00000084207,glutathione S-transferase pi 1,protein-coding
+RPS28P7,ENSG00000227097,ribosomal protein S28 pseudogene 7,n.d.
+MMP1,ENSG00000196611,matrix metallopeptidase 1,protein-coding
+CRYAB,ENSG00000109846,crystallin alpha B,protein-coding
+RPS25,ENSG00000118181,ribosomal protein S25,protein-coding
+HSPA8,ENSG00000109971,heat shock protein family A (Hsp70) member 8,protein-coding
+GAPDH,ENSG00000111640,glyceraldehyde-3-phosphate dehydrogenase,protein-coding
+PTMS,ENSG00000159335,parathymosin,protein-coding
+TPI1,ENSG00000111669,triosephosphate isomerase 1,protein-coding
+GABARAPL1,ENSG00000139112,GABA type A receptor associated protein like 1,protein-coding
+KRT8,ENSG00000170421,keratin 8,protein-coding
+PCBP2,ENSG00000197111,poly(rC) binding protein 2,protein-coding
+CD63,ENSG00000135404,CD63 molecule,protein-coding
+RPL41,ENSG00000229117,ribosomal protein L41,protein-coding
+MYL6,ENSG00000092841,myosin light chain 6,protein-coding
+ATP5F1B,ENSG00000110955,ATP synthase F1 subunit beta,protein-coding
+DCN,ENSG00000011465,decorin,protein-coding
+MYL2,ENSG00000111245,myosin light chain 2,protein-coding
+RPL6,ENSG00000089009,ribosomal protein L6,protein-coding
+RPLP0,ENSG00000089157,ribosomal protein lateral stalk subunit P0,protein-coding
+UBC,ENSG00000150991,ubiquitin C,protein-coding
+TPT1,ENSG00000133112,"tumor protein, translationally-controlled 1",protein-coding
+MYH6,ENSG00000197616,myosin heavy chain 6,protein-coding
+RPS29,ENSG00000213741,ribosomal protein S29,protein-coding
+RN7SL1,ENSG00000276168,RNA component of signal recognition particle 7SL1,scRNA
+RN7SL2,ENSG00000274012,RNA component of signal recognition particle 7SL2,scRNA
+HSP90AA1,ENSG00000080824,heat shock protein 90 alpha family class A member 1,protein-coding
+ACTC1,ENSG00000159251,actin alpha cardiac muscle 1,protein-coding
+SERF2,ENSG00000140264,small EDRK-rich factor 2,protein-coding
+B2M,ENSG00000166710,beta-2-microglobulin,protein-coding
+TPM1,ENSG00000140416,tropomyosin 1,protein-coding
+PPIB,ENSG00000166794,peptidylprolyl isomerase B,protein-coding
+RPL4,ENSG00000174444,ribosomal protein L4,protein-coding
+RPLP1,ENSG00000137818,ribosomal protein lateral stalk subunit P1,protein-coding
+PKM,ENSG00000067225,pyruvate kinase M1/2,protein-coding
+RPL9P8,ENSG00000237550,ribosomal protein L9 pseudogene 8,pseudo
+RPS17,ENSG00000182774,ribosomal protein S17,protein-coding
+MFGE8,ENSG00000140545,milk fat globule EGF and factor V/VIII domain containing,protein-coding
+RPS2,ENSG00000140988,ribosomal protein S2,protein-coding
+ATP6V0C,ENSG00000185883,ATPase H+ transporting V0 subunit c,protein-coding
+TNFRSF12A,ENSG00000006327,TNF receptor superfamily member 12A,protein-coding
+RPS15A,ENSG00000134419,ribosomal protein S15a,protein-coding
+ALDOA,ENSG00000149925,"aldolase, fructose-bisphosphate A",protein-coding
+COX4I1,ENSG00000131143,cytochrome c oxidase subunit 4I1,protein-coding
+RPL13,ENSG00000167526,ribosomal protein L13,protein-coding
+RNASEK,ENSG00000219200,ribonuclease K,protein-coding
+RPL26,ENSG00000161970,ribosomal protein L26,protein-coding
+UBB,ENSG00000170315,ubiquitin B,protein-coding
+RPL23,ENSG00000125691,ribosomal protein L23,protein-coding
+RPL19,ENSG00000108298,ribosomal protein L19,protein-coding
+EIF1,ENSG00000173812,eukaryotic translation initiation factor 1,protein-coding
+RPL27,ENSG00000131469,ribosomal protein L27,protein-coding
+MYL4,ENSG00000198336,myosin light chain 4,protein-coding
+COL1A1,ENSG00000108821,collagen type I alpha 1 chain,protein-coding
+RPL38,ENSG00000172809,ribosomal protein L38,protein-coding
+ACTG1,ENSG00000184009,actin gamma 1,protein-coding
+RPL17,ENSG00000265681,ribosomal protein L17,protein-coding
+BSG,ENSG00000172270,basigin (Ok blood group),protein-coding
+RPS15,ENSG00000115268,ribosomal protein S15,protein-coding
+OAZ1,ENSG00000104904,ornithine decarboxylase antizyme 1,protein-coding
+GADD45B,ENSG00000099860,growth arrest and DNA damage inducible beta,protein-coding
+EEF2,ENSG00000167658,eukaryotic translation elongation factor 2,protein-coding
+RPS28,ENSG00000233927,ribosomal protein S28,protein-coding
+UBL5,ENSG00000198258,ubiquitin like 5,protein-coding
+PRDX2,ENSG00000167815,peroxiredoxin 2,protein-coding
+CALR,ENSG00000179218,calreticulin,protein-coding
+RPL18A,ENSG00000105640,ribosomal protein L18a,protein-coding
+GDF15,ENSG00000130513,growth differentiation factor 15,protein-coding
+UBA52,ENSG00000221983,ubiquitin A-52 residue ribosomal protein fusion product 1,protein-coding
+USF2,ENSG00000105698,"upstream transcription factor 2, c-fos interacting",protein-coding
+COX6B1,ENSG00000126267,cytochrome c oxidase subunit 6B1,protein-coding
+RPS16,ENSG00000105193,ribosomal protein S16,protein-coding
+RPS19,ENSG00000105372,ribosomal protein S19,protein-coding
+APOE,ENSG00000130203,apolipoprotein E,protein-coding
+SELENOW,ENSG00000178980,selenoprotein W,protein-coding
+RPL18,ENSG00000063177,ribosomal protein L18,protein-coding
+FTL,ENSG00000087086,ferritin light chain,protein-coding
+RPL13A,ENSG00000142541,ribosomal protein L13a,protein-coding
+RPS11,ENSG00000142534,ribosomal protein S11,protein-coding
+RPS9,ENSG00000170889,ribosomal protein S9,protein-coding
+TNNI3,ENSG00000129991,"troponin I3, cardiac type",protein-coding
+RPL28,ENSG00000108107,ribosomal protein L28,protein-coding
+RPS5,ENSG00000083845,ribosomal protein S5,protein-coding
+CST3,ENSG00000101439,cystatin C,protein-coding
+MYL9,ENSG00000101335,myosin light chain 9,protein-coding
+GNAS,ENSG00000087460,GNAS complex locus,protein-coding
+RPS21,ENSG00000171858,ribosomal protein S21,protein-coding
+PPDPF,ENSG00000125534,pancreatic progenitor cell differentiation and proliferation factor,protein-coding
+RNA5-8SN2,ENSG00000278233,"RNA, 5.8S ribosomal N2",rRNA
+SOD1,ENSG00000142168,superoxide dismutase 1,protein-coding
+COL6A1,ENSG00000142156,collagen type VI alpha 1 chain,protein-coding
+COL6A2,ENSG00000142173,collagen type VI alpha 2 chain,protein-coding
+CHCHD10,ENSG00000250479,coiled-coil-helix-coiled-coil-helix domain containing 10,protein-coding
+MIF,ENSG00000240972,macrophage migration inhibitory factor,protein-coding
+LGALS1,ENSG00000100097,galectin 1,protein-coding
+RPL3,ENSG00000100316,ribosomal protein L3,protein-coding
+TMSB4X,ENSG00000205542,thymosin beta 4 X-linked,protein-coding
+TIMP1,ENSG00000102265,TIMP metallopeptidase inhibitor 1,protein-coding
+COX7B,ENSG00000131174,cytochrome c oxidase subunit 7B,protein-coding
+RPL36A,ENSG00000241343,ribosomal protein L36a,protein-coding
+RPL39,ENSG00000198918,ribosomal protein L39,protein-coding
+BGN,ENSG00000182492,biglycan,protein-coding
+SSR4,ENSG00000180879,signal sequence receptor subunit 4,protein-coding
+RPL10,ENSG00000147403,ribosomal protein L10,protein-coding
+RNR1,ENSG00000211459,s-rRNA,rRNA
+RNR2,ENSG00000210082,l-rRNA,rRNA
+ND1,ENSG00000198888,NADH dehydrogenase subunit 1,protein-coding
+ND2,ENSG00000198763,NADH dehydrogenase subunit 2,protein-coding
+TRNA,ENSG00000210127,tRNA-Ala,tRNA
+COX1,ENSG00000198804,cytochrome c oxidase subunit I,protein-coding
+COX2,ENSG00000198712,cytochrome c oxidase subunit II,protein-coding
+ATP8,ENSG00000228253,ATP synthase F0 subunit 8,protein-coding
+ATP6,ENSG00000198899,ATP synthase F0 subunit 6,protein-coding
+COX3,ENSG00000198938,cytochrome c oxidase subunit III,protein-coding
+ND3,ENSG00000198840,NADH dehydrogenase subunit 3,protein-coding
+ND4L,ENSG00000212907,NADH dehydrogenase subunit 4L,protein-coding
+ND4,ENSG00000198886,NADH dehydrogenase subunit 4,protein-coding
+ND5,ENSG00000198786,NADH dehydrogenase subunit 5,protein-coding
+ND6,ENSG00000198695,NADH dehydrogenase subunit 6,protein-coding
+CYTB,ENSG00000198727,cytochrome b,protein-coding
